@@ -1,0 +1,209 @@
+.projetos{
+    display: flex;
+    flex-direction: column;
+    height: 1886px;
+    gap: 32px;
+    /* background: #e4e0e0; */
+    width: 100%;
+    padding: 15px;
+    
+}
+.projetos__items{
+    display: flex;
+    flex-direction: column;
+    gap:64px;
+    align-items: center;
+}
+.projetos h2, h3, p{
+    color: var(--cinza-escuro);
+    font-family: var(--font-noto);
+}
+.projetos h2{
+    text-align: center;
+    font-size: 32px;
+    line-height: 37.57px;
+}
+.projetos__container{
+    height: 406px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos__container img{
+    width: 70%;
+    height: 426px;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Suaviza a transição */
+}
+.projetos__container img:hover{
+    transform: scale(1.2);
+}
+
+.projetos__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 368px;
+    height: 138px;
+}
+.projetos__container h3{
+     font-weight: 700;
+     font-size: 22px;
+     line-height: 25.83px;
+}
+.projetos__container p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+    width: 100%;
+}
+
+.projetos__repositorio{
+    border: 1px solid #2A7AE4;
+    padding: 16px;
+    height: 51px;
+    width: 116px;
+    font-family: var(--font-noto);
+    margin-right: 10px;
+    transition:  background-color 0.5s ease, transform 0.3s ease;
+}
+.projetos__repositorio:hover{
+    background-color: #D4E4FA;
+    border-radius: 12px;
+    transition-delay: 0.2s, 0s;
+     transform: scale(1.07);
+}
+.projetos__repositorio a{
+    font-family: var(--font-noto);
+    font-weight: 400;
+    font-size: 16px;
+    color:#2A7AE4 ;
+    text-decoration: none;
+   
+} 
+.projetos__ver-Demo{
+    border:none;
+    padding: 16px;
+    height: 51px;
+    width: 116px;
+    background:#2A7AE4;
+    transition:  background-color 0.5s ease, transform 0.3s ease;
+    
+}
+.projetos__ver-Demo:hover{
+   background-color:   #5595E9;
+   border-radius: 12px; 
+   transition-delay: 0.2s, 0s;
+   transform: scale(1.07);
+}
+.projetos__ver-Demo a{
+    color: #FFF;
+    font-family: var(--font-noto);
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+.projetos__botao a:hover{
+    text-decoration: underline;   
+}
+@media (max-width: 870px){
+    .projetos{
+        height: 2017px;
+        padding: 12px 111px;
+        gap: 16px;
+        align-items: center;
+    }
+    .projetos__container{
+        flex-direction: column;
+        width: 90%;
+        height:427px;
+        
+    }
+    .projetos__container img{
+        width: 100%;
+        height: 320px;
+    }
+    #projeto-2{
+        flex-direction: column-reverse;
+    }
+    #projeto-3{
+        flex-direction: column-reverse;
+    }
+    .projetos__texto{
+        width: 100%;
+    }
+    .projetos__botao{
+        flex-direction: row;
+        display: flex;
+    }
+    .projetos__repositorio, 
+    .projetos__ver-Demo{
+        width: 96px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+@media (max-width: 870px){
+    .projetos__items{
+        height: 1215px;
+        gap: 233px;
+        margin-top: 108px;
+    }
+    .projetos__container{
+        height: 251px;
+        grid: 16px;
+    }
+}
+@media (max-width: 505px) {
+    .projetos{
+        padding: 12px 111px;
+        gap: 51px;
+        align-items: center;
+        height: 1366px;
+        margin-top: 13px;
+    }
+    .projetos__items{
+        width: 100%;
+        height: 1215px;
+        gap: 81px;
+        
+        margin-top: 0px;
+    }
+    .projetos__container{
+        height: 251px;
+        gap: 16px;
+    }
+    .projetos img{
+        width: 100%;
+        height: 144px
+    }
+    .projetos h3{
+        font-size: 16px;
+        line-height: 18.78px;
+        font-weight: 700;
+    }
+    .projetos p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+    }
+    .projetos__repositorio{
+        width: 108px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+    .projetos__ver-Demo{
+        width: 96px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+}

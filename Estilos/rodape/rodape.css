@@ -1,0 +1,30 @@
+.rodape{
+    width: 100%;
+    height: 102px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 0px 111px;
+}
+.rodape__container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+.rodape__texto{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    color: var(--cinza-escuro);
+}
+.rodape__texto strong{
+    font-family:var(--font-rodape);
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(238, 10, 10);
+}
+ 
+
